@@ -10,7 +10,6 @@ namespace HelloWorld
             int guess;
             int attempts = 0;
 
-            Console.WriteLine("=== Number Guessing Game ===");
             Console.WriteLine("Guess the secret number between 1 and 50.");
 
             do
@@ -22,12 +21,12 @@ namespace HelloWorld
 
                 if (guess > secretNumber)
                 {
-                    Console.WriteLine("Too high! Try again.");
+                    Console.WriteLine("Too high");
                 }
                 else if (guess < secretNumber)
                 {
-                    Console.WriteLine("Too low! Try again.");
-                }
+                    Console.WriteLine("Too low");
+                } 
                 else
                 {
                     Console.WriteLine("Congratulations! You guessed the correct number.");
